@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Your Blog Name]]></title>
+        <description><![CDATA[Latest blog posts and updates]]></description>
+        <link>https://nicologiacomini.me</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 03 Dec 2024 22:42:58 GMT</lastBuildDate>
+        <atom:link href="https://nicologiacomini.me/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 03 Dec 2024 22:42:58 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2024]]></copyright>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[TEST]]></title>
+            <description><![CDATA[TEST]]></description>
+            <link>https://nicologiacomini.me/posts/TEST</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/TEST</guid>
+            <pubDate>Fri, 22 Nov 2024 23:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Is AI hiding the knowledge?]]></title>
+            <description><![CDATA[AI is very used today, but is AI keeping knowladge hidden? Which are the risks for the future?]]></description>
+            <link>https://nicologiacomini.me/posts/ai-problem</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/ai-problem</guid>
+            <pubDate>Sat, 01 Jun 2024 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Biases that everyone should know]]></title>
+            <description><![CDATA[Simple explanation of the main biases that we can find in reasoning in research, articles, discussions and speeches.]]></description>
+            <link>https://nicologiacomini.me/posts/biases</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/biases</guid>
+            <pubDate>Sun, 18 Aug 2024 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Multi linear regression for calibration]]></title>
+            <description><![CDATA[How to apply the multi linear regression to obtain the reference data. Let's find out together!]]></description>
+            <link>https://nicologiacomini.me/posts/calibration</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/calibration</guid>
+            <pubDate>Sat, 09 Mar 2024 23:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Denoising data, which technique?]]></title>
+            <description><![CDATA[Denoising of data usins two different approach: low-rank approximation and Gavish et al. method. Which will be the best?]]></description>
+            <link>https://nicologiacomini.me/posts/denoising</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/denoising</guid>
+            <pubDate>Fri, 16 Feb 2024 23:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[FFNN for data calibration]]></title>
+            <description><![CDATA[How to implement a FFNN for data calibration. Which will be the best implementation?]]></description>
+            <link>https://nicologiacomini.me/posts/ffnn-calibration</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/ffnn-calibration</guid>
+            <pubDate>Wed, 07 Aug 2024 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Feedforward Neural Network: what it is]]></title>
+            <description><![CDATA[Let's explore the main characteristics of a Feedforward Neural Network and how it works.]]></description>
+            <link>https://nicologiacomini.me/posts/ffnn-what-it-is</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/ffnn-what-it-is</guid>
+            <pubDate>Sun, 01 Sep 2024 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How we can trust to the AI]]></title>
+            <description><![CDATA[How important is data? How is trustablity of data correlated to the deontology?]]></description>
+            <link>https://nicologiacomini.me/posts/importance-of-data</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/importance-of-data</guid>
+            <pubDate>Thu, 11 Jul 2024 22:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Matrix decomposition, the basis for ML]]></title>
+            <description><![CDATA[A short introduction on basic concepts used in ML, introduction to Algebra, Spectral Decomposition and SVD]]></description>
+            <link>https://nicologiacomini.me/posts/matrix-decomposition</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/matrix-decomposition</guid>
+            <pubDate>Fri, 09 Feb 2024 23:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Underfitting and overfitting: an overview]]></title>
+            <description><![CDATA[Not always having more parameters means high reliability of the model. Let's see why.]]></description>
+            <link>https://nicologiacomini.me/posts/underfitting-overfitting-problem</link>
+            <guid isPermaLink="true">https://nicologiacomini.me/posts/underfitting-overfitting-problem</guid>
+            <pubDate>Wed, 31 Jul 2024 22:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
