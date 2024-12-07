@@ -29,7 +29,7 @@ export default async function Posts() {
 
   return (
     <div>
-      <h1 className="my-10 mx-2 max-md:mx-4 font-[Onest-Black]">Posts</h1>
+      <h1 className="flex my-10 mx-2 max-md:mx-4 font-[Onest-Black] align-middle"><img className="logo mr-2 my-auto" src="favicon.ico" alt="logo"/>Posts</h1>
       {/* <hr className="h-px mx-1 max-md:mx-4 bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" /> */}
 
       {postList.map((post) => (
