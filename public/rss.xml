@@ -4,18 +4,11 @@
         <description><![CDATA[Latest blog posts and updates]]></description>
         <link>https://nicologiacomini.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 03 Dec 2024 22:42:58 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Dec 2024 10:56:37 GMT</lastBuildDate>
         <atom:link href="https://nicologiacomini.me/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 03 Dec 2024 22:42:58 GMT</pubDate>
+        <pubDate>Sat, 07 Dec 2024 10:56:37 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024]]></copyright>
         <language><![CDATA[en]]></language>
-        <item>
-            <title><![CDATA[TEST]]></title>
-            <description><![CDATA[TEST]]></description>
-            <link>https://nicologiacomini.me/posts/TEST</link>
-            <guid isPermaLink="true">https://nicologiacomini.me/posts/TEST</guid>
-            <pubDate>Fri, 22 Nov 2024 23:00:00 GMT</pubDate>
-        </item>
         <item>
             <title><![CDATA[Is AI hiding the knowledge?]]></title>
             <description><![CDATA[AI is very used today, but is AI keeping knowladge hidden? Which are the risks for the future?]]></description>
