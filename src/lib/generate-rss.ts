@@ -8,8 +8,8 @@ export default async function generateRssFeed() {
   const site_url = 'https://nicologiacomini.me';
 
   const feedOptions = {
-    title: 'Your Blog Name',
-    description: 'Latest blog posts and updates',
+    title: 'Nicolò Giacomini',
+    description: 'Personal website about coding, machine learing and informatic technlogies',
     site_url: site_url,
     feed_url: `${site_url}/rss.xml`,
     language: 'en',
