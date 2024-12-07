@@ -39,7 +39,7 @@ where A is the matrix on which we want to get the decomposition:
 
 Singular vectors and singular values are analogous to eigenvectors and eigenvalues. Remember that eigenvectors represent the behavior of a matrix on specific directions, while eigenvalues define how much the matrix stretches or shrinks along those directions. Similarly, singular values describe how much certain directions are scaled (not necessarily orthogonal) by the matrix, and singular vectors represent those directions. This is very useful, as we'll see.
 
-<p class="comment text-md"># For further insights and evidence on these topics I recommend reading <a href="/blog/posts/matrix-decomposition">my post about the algebra used in machine learning</a> or any algebra book. It is really interesting!</p>
+<p class="comment text-md"># For further insights and evidence on these topics I recommend reading <a href="/posts/matrix-decomposition">my post about the algebra used in machine learning</a> or any algebra book. It is really interesting!</p>
 
 ### The low-rank approximation (Eckart-Young approximation)
 As I said previously, the main goal of the experiment is to calculate the low-rank approximation of the dataset matrix, where k is the rank of the matrix. This technique is used in different cases:

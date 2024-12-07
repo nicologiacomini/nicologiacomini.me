@@ -134,7 +134,7 @@ The bias is very high and the variance is very low. In general the error is high
 The variance increases and the bias decreases. The error that we can find here is due to the variance, therefore a high variance increases the estimation error because the function calculated by the model is too correlated to the training set used to train the model. This is overfitting.
 
 ### Final considerations
-The best solution that we can achieve, as we can see, is in the middle. A good model should not be too simple to avoid the underfitting but at the same time it should not be too complex in order to avoid the overfitting. How can we find the best middle way? The simplest and the most effective solution is to try with several tests and verify in which conditions we can achieve the smaller error, as I did in the previous in the [denoising post](/blog/posts/denoising).
+The best solution that we can achieve, as we can see, is in the middle. A good model should not be too simple to avoid the underfitting but at the same time it should not be too complex in order to avoid the overfitting. How can we find the best middle way? The simplest and the most effective solution is to try with several tests and verify in which conditions we can achieve the smaller error, as I did in the previous in the [denoising post](/posts/denoising).
 In general, in machine learning, there is not a way to find the best model without testing. In addition, in some cases the error of the model keeps pretty high even though we built a very good model. This is due to the size and the quality of the dataset that is crucial for determining the level of the error. 
 
 Thanks for the attention! 😃
