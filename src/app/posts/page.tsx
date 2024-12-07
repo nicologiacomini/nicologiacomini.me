@@ -29,7 +29,7 @@ export default async function Posts() {
 
   return (
     <div>
-      <h1 className="flex my-10 mx-2 max-md:mx-4 font-[Onest-Black] align-middle"><img className="logo mr-2 my-auto" src="favicon.ico" alt="logo"/>Posts</h1>
+      <h1 className="flex my-10 mx-2 max-md:mx-4 font-[Onest-Black] align-middle"><img className="logo mr-2 my-auto" src="logo.png" alt="logo"/>Posts</h1>
 
       {postList.map((post) => (
         <div key={post.title}>

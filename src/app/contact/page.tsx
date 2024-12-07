@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="mx-auto rounded-md">
             <div className="text-center">
                 <h1 className="flex my-10 mx-2 max-md:mx-4 text-3xl font-[Onest-Black]">
-                    <img className="logo mr-2 my-auto" src="favicon.ico" alt="logo"/>
+                    <img className="logo mr-2 my-auto" src="logo.png" alt="logo"/>
                     Contact Me
                 </h1>
                 <p className="text-justify mb-10 mr-20 max-md:mx-4">
