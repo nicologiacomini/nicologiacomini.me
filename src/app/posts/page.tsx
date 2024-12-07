@@ -1,5 +1,7 @@
 import { getAllPostIds, getMetadataPost } from "@/lib/posts";
 import { Metadata } from 'next'
+// import logo from '/logo.png';
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Nicolò Giacomini | Posts'
@@ -29,7 +31,7 @@ export default async function Posts() {
 
   return (
     <div>
-      <h1 className="flex my-10 mx-2 max-md:mx-4 font-[Onest-Black] align-middle"><img className="logo mr-2 my-auto" src="logo.png" alt="logo"/>Posts</h1>
+      <h1 className="flex my-10 mx-2 max-md:mx-4 font-[Onest-Black] align-middle"><Image className="logo mr-2 my-auto" src="/logo.png" alt="logo" height={35} width={35}/>Posts</h1>
 
       {postList.map((post) => (
         <div key={post.title}>

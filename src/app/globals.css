@@ -308,8 +308,3 @@ p {
 a:hover {
   color: var(--a-hover-color);
 }
-
-.logo {
-  height: 35px;
-  width: 35px;
-}
