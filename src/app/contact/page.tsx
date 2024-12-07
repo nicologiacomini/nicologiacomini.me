@@ -7,16 +7,17 @@ export const metadata: Metadata = {
 export default function Contact() {
     return (
         <div className="container mx-auto">
-        <div className="max-w-md mx-auto rounded-md">
+        <div className="mx-auto rounded-md">
             <div className="text-center">
-                <h1 className="my-10 text-3xl font-[Onest-Black]">
+                <h1 className="flex my-10 mx-2 max-md:mx-4 text-3xl font-[Onest-Black]">
+                    <img className="logo mr-2 my-auto" src="favicon.ico" alt="logo"/>
                     Contact Me
                 </h1>
-                <p className="text-justify mx-5">
+                <p className="text-justify mb-10 mr-20 max-md:mx-4">
                     If you find a mistake or imprecision, or you just want to get in touch with me, fill up the form below to send me a message. 😄
                 </p>
-                </div>
-                <div className="m-7">
+            </div>
+            <div className="m-7 w-4/6 mx-auto">
                 <form action="https://api.web3forms.com/submit" method="POST" id="form">
                     <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY} />
                     <input type="hidden" name="subject" value="New Submission from Web3Forms" />
@@ -41,7 +42,7 @@ export default function Contact() {
                         <button type="submit" className="w-full px-3 py-4 text-background-button font-[Onest-Bold] rounded-md focus:bg-text-subtitle focus:outline-none bg-a-hover-color hover:bg-submit-hover-color">
                             Send Message
                         </button>
-                        <p className="text-xs mt-2">Powered by <a href="https://web3forms.com/"><u>Web3Forms</u></a></p>
+                        <p className="text-xs mt-2 font-[Onest-Light]">Powered by <a href="https://web3forms.com/"><u>Web3Forms</u></a></p>
                     </div>
                 </form>
             </div>
