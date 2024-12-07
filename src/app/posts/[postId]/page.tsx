@@ -18,8 +18,6 @@ export default async function PostPage(props: { params: Promise<{ postId: string
             <div className="flex mt-4 flex-col space-y-3 text-md font-medium text-gray-500 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-2">
                 <div className="mr-auto font-[Onest-Regular] rounded-full bg-background-date px-2 py-0.5 text-date-color mb-2 max-md:ml-4">{getLiteralDate(post.date)} - {countWords(post.content)} minutes</div>
             </div>
-            {/* <div className='text-text-subtitle font-[Onest-Regular] max-md:mx-4'>{getLiteralDate(post.date)} - {countWords(post.content)} minutes</div> */}
-            {/* <hr className="h-px max-md:mx-4 bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" /> */}
             <ClientMarkdown content={post.content}/>
         </div>
     );

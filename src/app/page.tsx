@@ -14,7 +14,6 @@ export default async function Home() {
 
   const fileList = await generateStaticParams();
 
-  // Fetch all post data
   let postList = await Promise.all(
     fileList.map(async (param) => {
       const post = await getMetadataPost(param.postId);
@@ -22,11 +21,9 @@ export default async function Home() {
     })
   );
 
-  // Filter visible posts and sort by date
   postList = postList
     .filter((post) => post.visible)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    // Slice to get only the last 3 posts
     .slice(0, 2);
 
 

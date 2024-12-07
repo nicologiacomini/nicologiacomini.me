@@ -30,7 +30,6 @@ export default async function Posts() {
   return (
     <div>
       <h1 className="flex my-10 mx-2 max-md:mx-4 font-[Onest-Black] align-middle"><img className="logo mr-2 my-auto" src="favicon.ico" alt="logo"/>Posts</h1>
-      {/* <hr className="h-px mx-1 max-md:mx-4 bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" /> */}
 
       {postList.map((post) => (
         <div key={post.title}>
@@ -41,9 +40,6 @@ export default async function Posts() {
             <h5 className="mb-2 text-2xl font-bold tracking-tight">
               {post.title}
             </h5>
-            {/* <p className="underline font-[Onest-Regular] text-text-subtitle underline-offset-4 decoration-[0.5px] mb-2">
-              {post.literalDate}
-            </p> */}
             <div className="flex mt-2 flex-col space-y-3 text-sm font-medium text-gray-500 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-2">
                 <div className="mr-auto font-[Onest-Regular] rounded-full bg-background-date px-2 py-0.5 text-date-color mb-2">{post.literalDate}</div>
             </div>

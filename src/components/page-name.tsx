@@ -7,5 +7,5 @@ export default function NameTab({ nameTab }: { nameTab: string }) {
         document.title = nameTab;
     }, [nameTab]);
 
-    return null; // This component doesn't render anything visible
+    return null;
 }

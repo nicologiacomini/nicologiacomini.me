@@ -39,13 +39,6 @@ export default function GoTop({sizeIcon}: PropsGoTop) {
     });
 
     return (
-        // <div>
-        //     <button
-        //     className="fixed z-50 bottom-24 right-8 shadow-md rounded-full bg-[#f9f9f9] h-12 w-12 flex justify-center items-center" 
-        //     onClick={goToTop} 
-        //     ><ArrowUp />
-        //     </button>
-        // </div>
         <div>
             <Button className='bg-background-button text-text-button hover:bg-hover-button w-size-gotop' size='square'>
                 <ArrowUp size={sizeIcon} style={{ width: sizeIcon+'px', height: sizeIcon+'px' }}/>
