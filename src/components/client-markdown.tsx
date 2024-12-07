@@ -8,15 +8,17 @@ import remarkMath from 'remark-math';
 import 'katex/dist/katex.min.css';
 import rehypePrism from "rehype-prism-plus";
 import '../style/code-style.css'
+import { url } from "inspector";
 
 export default function ClientMarkdown({ content }: { content: string }) {
+    // const colorList: string = localStorage.getItem('theme') === 'light' ? '#1e88e5' : '#7fff00'
     return (
         <section>
         <div className='markdown leading-relaxed font-[Onest-Regular] text-justify max-md:mx-4'>
             <ReactMarkdown
                 components={{
-                    ul: ({node, ...props}) => <ul style={{listStyleType: 'none', paddingLeft: 0}} {...props} />,
-                    ol: ({node, ...props}) => <ol style={{listStyleType: 'none', paddingLeft: '10px'}} {...props} />
+                    // ul: ({node, ...props}) => <ul style={{listStyleType: 'disc', listStylePosition: 'inside', paddingLeft: '10px'}} {...props} />,
+                    // ol: ({node, ...props}) => <ol style={{listStyleType: 'decimal', listStylePosition: 'inside', paddingLeft: '10px'}} {...props} />
                 }}
                 remarkPlugins={[
                     // remarkGfm,

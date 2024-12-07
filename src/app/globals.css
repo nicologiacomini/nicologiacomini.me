@@ -73,14 +73,15 @@
   --border-experience: #f1f5f9;
   --date-color: #1e88e5;
 
-  ul > li::before {
-    content: url(/icons/dot-light.svg);
+  @supports (list-style-type: disclosure-closed) {
+    ul > li::marker {
+      content: url(/icons/dot-light.svg);
+    }
+  
+    ul ul > li::marker {
+      content: url(/icons/subdot-light.svg);
+    }
   }
-
-  ul ul > li::before {
-    content: url(/icons/subdot-light.svg);
-  }
-
 }
 
 .dark {
@@ -123,12 +124,14 @@
   --border-experience: #262626b1;
   --date-color: #7cc534;
 
-  ul > li::before {
-    content: url(/icons/dot-dark.svg);
-  }
-
-  ul ul > li::before {
-    content: url(/icons/subdot-dark.svg);
+  @supports (list-style-type: disclosure-closed) {
+    ul > li::marker {
+      content: url(/icons/dot-dark.svg);
+    }
+  
+    ul ul > li::marker {
+      content: url(/icons/subdot-dark.svg);
+    }
   }
 }
 
@@ -169,40 +172,45 @@
   }
 
   
-  ul ul > li {
+  /* ul ul > li {
     position: relative;
     left: -10px;
+  }*/
+
+  /* ol ul {
+    margin-left: 1.5em;
+  }
+
+  ul ol {
+    margin-left: 1.5em;
+  }*/
+
+  ol > li {
+    counter-increment: list-counter;
+  } 
+
+  ol > li::marker {
+    content: counter(list-counter) ". ";
+    color: var(--a-hover-color);
+    font-family: Onest-Bold;
   }
 
   ul ul {
     margin-left: 2em;
   }
 
-  ol ul {
-    margin-left: 1.5em;
-  }
-
-  ul ol {
-    margin-left: 1.5em;
-  }
-
-  ol {
-    counter-reset: list-counter;
-  }
-  
-  ol > li {
-    counter-increment: list-counter;
-    list-style-type: none;
-  }
-
-  ol > li::before {
-    content: counter(list-counter) ". ";
-    color: var(--a-hover-color);
-    font-family: Onest-Bold;
-    margin-right: 8px;
+  @supports (list-style-type: disclosure-closed) {
+    ul ul {
+      margin-left: 2em;
+      list-style-type: circle;
+    }
+    ol ul {
+      margin-left: 2em;
+      list-style-type: circle;
+    }
   }
   
-  ol ol {
+  /* ol ol {
     margin-left: 1.5em;
   }
   
@@ -210,12 +218,11 @@
     counter-increment: list-counter;
   }
   
-  ol ol > li::before {
-    content: counter(list-counter, decimal) ".  ";
+  ol ol > li::marker {
+    content: counter(list-counter, decimal) ". ";
     color: var(--a-hover-color);
     font-family: Onest-Bold;
-    margin-right: 8px;
-  }
+  } */
 
   a {
     text-decoration: underline;
@@ -233,11 +240,11 @@
   pre {
     border-radius: 5px;
     padding: 5px;
-    overflow-x: scroll;
   }
 
-  .katex {
+  .katex-display, .katex {
     overflow-x: scroll;
+    height: auto;
   }
 }
 
