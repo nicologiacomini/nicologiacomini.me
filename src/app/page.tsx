@@ -56,6 +56,20 @@ export default async function Home() {
         </section>
 
         <section className="mb-10">
+          <h1 className="text-2xl font-[Onest-Bold] mb-1">Skills</h1>
+          <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
+          <div className="text-center leading-9">
+          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Python</span>
+          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Machine Learning</span>
+          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Bash</span><br/>
+          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Distributed Systems</span>
+          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Web Developing</span>
+
+          </div>
+
+        </section>
+
+        <section className="mb-10">
           <h1 className="text-2xl font-[Onest-Bold] mb-1">Last posts</h1>
           <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
 
