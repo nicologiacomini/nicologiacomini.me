@@ -44,7 +44,7 @@ export default function Contact() {
                         <button type="submit" className="w-full px-3 py-4 text-background-button font-[Onest-Bold] rounded-md focus:bg-text-subtitle focus:outline-none bg-a-hover-color hover:bg-submit-hover-color">
                             Send Message
                         </button>
-                        <p className="text-xs mt-2 font-[Onest-Light]">Powered by <a href="https://web3forms.com/"><u>Web3Forms</u></a></p>
+                        <p className="text-xs mt-2 font-[Onest-Light]">Powered by <a href="https://web3forms.com/" target="_blank"><u>Web3Forms</u></a></p>
                     </div>
                 </form>
             </div>

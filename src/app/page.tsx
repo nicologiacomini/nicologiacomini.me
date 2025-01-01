@@ -105,19 +105,19 @@ export default async function Home() {
               </tr>
               <tr>
                 <td className="pr-10 pb-3"><FaGithub className="inline-block align-middle mr-2" />GitHub:</td>
-                <td className="pb-3"><a className="underline" href="https://github.com/nicologiacomini">nicologiacomini</a></td>
+                <td className="pb-3"><a className="underline" href="https://github.com/nicologiacomini" target="_blank" rel="noopener noreferrer">nicologiacomini</a></td>
               </tr>
               <tr>
                 <td className="pr-10 pb-3"><FaTwitter className="inline-block align-middle mr-2" />X.com:</td>
-                <td className="pb-3"><a className="underline" href="https://x.com/ilnick99">@ilnick99</a></td>
+                <td className="pb-3"><a className="underline" href="https://x.com/ilnick99" target="_blank" rel="noopener noreferrer">@ilnick99</a></td>
               </tr>
               <tr>
                 <td className="pr-10 pb-3"><FaLinkedin className="inline-block align-middle mr-2" />LinkedIn:</td>
-                <td className="pb-3"><a className="underline" href="https://www.linkedin.com/in/nicolo-giacomini">Nicolò Giacomini</a></td>
+                <td className="pb-3"><a className="underline" href="https://www.linkedin.com/in/nicolo-giacomini" target="_blank" rel="noopener noreferrer">Nicolò Giacomini</a></td>
               </tr>
               <tr>
                 <td className="pr-10 pb-3"><FaGlobe className="inline-block align-middle mr-2" />Website:</td>
-                <td className="pb-3"><a className="underline" href="https://nicologiacomini.me">nicologiacomini.me</a></td>
+                <td className="pb-3"><a className="underline" href="https://nicologiacomini.me" target="_blank" rel="noopener noreferrer">nicologiacomini.me</a></td>
               </tr>
             </tbody>
           </table>
@@ -125,13 +125,13 @@ export default async function Home() {
             <div><Mail className="inline-block align-[-3px] mr-2 w-5 h-5" />E-mail:</div>
             <div className="mb-5 pl-7"><a className="underline" href="mailto:n.giacomini99@gmail.com">n.giacomini99@gmail.com</a></div>
             <div><FaGithub className="inline-block align-middle mr-2" />GitHub:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://github.com/nicologiacomini">nicologiacomini</a></div>
+            <div className="mb-5 pl-7"><a className="underline" href="https://github.com/nicologiacomini" target="_blank" rel="noopener noreferrer">nicologiacomini</a></div>
             <div><FaTwitter className="inline-block align-middle mr-2" />X.com:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://x.com/ilnick99">@ilnick99</a></div>
+            <div className="mb-5 pl-7"><a className="underline" href="https://x.com/ilnick99" target="_blank" rel="noopener noreferrer">@ilnick99</a></div>
             <div><FaLinkedin className="inline-block align-middle mr-2" />LinkedIn:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://www.linkedin.com/in/nicolo-giacomini">Nicolò Giacomini</a></div>
+            <div className="mb-5 pl-7"><a className="underline" href="https://www.linkedin.com/in/nicolo-giacomini" target="_blank" rel="noopener noreferrer">Nicolò Giacomini</a></div>
             <div><FaGlobe className="inline-block align-middle mr-2" />Website:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://nicologiacomini.me">nicologiacomini.me</a></div>
+            <div className="mb-5 pl-7"><a className="underline" href="https://nicologiacomini.me" target="_blank" rel="noopener noreferrer">nicologiacomini.me</a></div>
           </section>
         </section>
 

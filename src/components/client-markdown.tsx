@@ -19,6 +19,16 @@ export default function ClientMarkdown({ content }: { content: string }) {
                 components={{
                     // ul: ({node, ...props}) => <ul style={{listStyleType: 'disc', listStylePosition: 'inside', paddingLeft: '10px'}} {...props} />,
                     // ol: ({node, ...props}) => <ol style={{listStyleType: 'decimal', listStylePosition: 'inside', paddingLeft: '10px'}} {...props} />
+                    a: ({ node, href, ...props }) => {
+                        const isInsiedLink = href?.startsWith('#');
+                        const aProps = !isInsiedLink ? {
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            ...props
+                        } : props;
+
+                        return <a href={href} {...aProps} />;
+                    },
                 }}
                 remarkPlugins={[
                     // remarkGfm,
