@@ -315,3 +315,7 @@ p {
 a:hover {
   color: var(--a-hover-color);
 }
+
+.reference {
+  color: var(--a-hover-color);
+}
