@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 // import logo from 'logo.png';
 import Image from "next/image";
+import ContactInfo from "@/components/contact-info";
 
 export const metadata: Metadata = {
     title: 'Nicolò Giacomini | Contact'
@@ -48,6 +49,9 @@ export default function Contact() {
                     </div>
                 </form>
             </div>
+        </div>
+        <div className="py-5 px-5 md:px-0 text-lg">
+            <ContactInfo />
         </div>
   </div>
     )

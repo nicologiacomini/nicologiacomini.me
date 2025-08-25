@@ -1,6 +1,4 @@
-import { Button } from "./ui/button";
-import Link from "next/link";
-import { TiSocialLinkedin, TiSocialTwitter, TiSocialGithub, TiRss } from "react-icons/ti";
+import { TiRss } from "react-icons/ti";
 
 export default function Footer() {
     return (
