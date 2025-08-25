@@ -320,6 +320,6 @@ In these tests, we compared two different approaches to data denoising. In the f
 Although the first impression is that having the Reference Station data provides better results, the outcomes we obtained are quite similar between the two approaches.
 Even though having a lot of experimental data is the best way, however this is not always possible in practice, due to too high costs. Despite that, the results show that we can denoise data efficiently even without Reference Station data.
 
-If you are interested to the complete code, I leave here my github repository where you can find it: <a href="https://github.com/nicologiacomini/Machine-Learning-basics/tree/1bd8dac7161ccdf8094cf1761686543e5110abf9/Homework-2">Homework 2</a>.
+If you are interested to the complete code, I leave <a href="https://github.com/nicologiacomini/Machine-Learning-basics/tree/1bd8dac7161ccdf8094cf1761686543e5110abf9/Homework-2">here my github repository</a> where you can find it.
 
 Thanks for reading!😃

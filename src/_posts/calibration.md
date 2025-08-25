@@ -167,7 +167,7 @@ And this is the calibration of the signal:
 
 ![Humidity initial](/posts/calibration/calibration.png)
 
-If you are interested to the complete code, this is the repository where you can find it: <a href="https://github.com/nicologiacomini/Machine-Learning-basics/tree/1bd8dac7161ccdf8094cf1761686543e5110abf9/Homework-3">Homework 3</a>.
+If you are interested to the complete code, <a href="https://github.com/nicologiacomini/Machine-Learning-basics/tree/1bd8dac7161ccdf8094cf1761686543e5110abf9/Homework-3">this is the repository</a> where you can find it.
 
 #### That's all
 
