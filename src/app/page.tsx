@@ -1,8 +1,8 @@
 import Header from "@/components/header";
-import { Mail } from 'lucide-react'
-import { FaGithub, FaTwitter, FaLinkedin, FaGlobe } from "react-icons/fa";
 import { getAllPostIds, getMetadataPost } from "@/lib/posts";
 import { ExperienceCard } from "@/components/experience-cards";
+import ContactInfo from "@/components/contact-info";
+import SkillTag from "@/components/skill-tag";
 
 
 export async function generateStaticParams(): Promise<{ postId: string }[]> {
@@ -32,8 +32,8 @@ export default async function Home() {
       <Header/>
       <p className="text-base text-justify">
                 I am Nicolò, I am working at BSC as Junior Research Engineer and, concurrently, I am pursuing the Master's Degree at UPC, in Barcelona.
-                I want to use this space as a place where to share with you the most interesting and useful things I am studying.<br/>
-                I am a Machine Learning and networks systems enthusiast, and Python lover. I also enjoy web and software development. I am Italian, and I&apos;m living in Barcelona.
+                I want to use this space as a place where to share with you the most interesting and useful things that I am studying.<br/>
+                I am a machine learning and networks systems enthusiast, and Python lover. I also enjoy web and software development. I am Italian, and I&apos;m living in Barcelona.
             </p>
         <p className="mt-10">
         </p>
@@ -42,16 +42,18 @@ export default async function Home() {
           <h1 className="text-2xl font-[Onest-Bold] mb-1 mt-10">Work experience</h1>
           <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
 
-          <ExperienceCard company="Barcelona Supercomputer Center (BSC)" position="Junior Researcher Engineer" dates="in progress" description={["Provenance, Metadata and Reproducibility team"]} linkCompany="https://bsc.es/" img="/experience/bsc.jpg"/>
+          <ExperienceCard company="Barcelona Supercomputer Center (BSC)" position="Junior Researcher Engineer" dates="2024 - in progress" description={["Provenance, Metadata and Reproducibility team.", "Working on enhancing reproducibility and traceability in HPC environments by developing metadata capture, storage, and workflow integration within the COMPSs framework."]} linkCompany="https://bsc.es/" img="/experience/bsc.jpg"/>
         </section>
 
         <section className="mb-10">
             <h1 className="text-2xl font-[Onest-Bold] mb-1">Education</h1>
             <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
 
-            <ExperienceCard company="Universitat Politècnica de Catalunya (UPC)" position="Master in Innovation and Research in Informatics" dates="in progress" description={["Specialization in Computer Network and Distributed Systems"]} linkCompany="https://www.fib.upc.edu/ca" img="/experience/upc.jpg"/>
+            <ExperienceCard company="Universitat Politècnica de Catalunya (UPC)" position="Master in Innovation and Research in Informatics" dates="2023 - in progress" description={["Specialization in Computer Network and Distributed Systems"]} linkCompany="https://www.fib.upc.edu/ca" img="/experience/upc.jpg"/>
 
-            <ExperienceCard company="University of Brescia (UNIBS)" position="Bachelor's Degree in Computer Science Engineering" dates="2023" description={["Thesis: Algorithms and Consensus Protocols in Distributed Systems","Description: This thesis is the study concerning the principles of distributed consensus and the operation of the most used algorithms such as Practical Byzantine Fault Tolerance, Paxos and Raft"]} linkCompany="https://www.unibs.it/it" img="/experience/unibs.jpg"/> 
+            <ExperienceCard company="Norwegian University of Science and Technology (NTNU)" position="Exchange Student (Erasmus+)" dates="Spring 2025" description={["Coursework: Advanced Software Engineering, Real-Time Programming, Applied Cryptography and Network Security"]} linkCompany="https://www.ntnu.edu/" img="/experience/ntnu.svg"/>
+
+            <ExperienceCard company="University of Brescia (UNIBS)" position="Bachelor's Degree in Computer Science Engineering" dates="Graduated in 2023" description={["Thesis: Algorithms and Consensus Protocols in Distributed Systems","Description: This thesis is the study concerning the principles of distributed consensus and the operation of the most used algorithms such as Practical Byzantine Fault Tolerance, Paxos and Raft"]} linkCompany="https://www.unibs.it/it" img="/experience/unibs.jpg"/> 
 
         </section>
 
@@ -59,12 +61,13 @@ export default async function Home() {
           <h1 className="text-2xl font-[Onest-Bold] mb-1">Skills</h1>
           <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
           <div className="text-center leading-9">
-          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Python</span>
-          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Machine Learning</span>
-          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Bash</span><br/>
-          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Distributed Systems</span>
-          <span className="bg-background-date text-date-color text-md font-[Onest-Bold] me-2 px-2.5 py-0.5 rounded">Web Developing</span>
-
+          <SkillTag>Python</SkillTag>
+          <SkillTag>Bash</SkillTag>
+          <SkillTag>Distributed Systems</SkillTag>
+          <SkillTag>DevOps</SkillTag>
+          <SkillTag>Software Development</SkillTag>
+          <SkillTag>Machine Learning</SkillTag>
+          <SkillTag>Web Development</SkillTag>
           </div>
 
         </section>
@@ -92,50 +95,7 @@ export default async function Home() {
           ))}
           </div>
         </section>
-
-        
-        <section className="mb-10">
-          <h1 className="text-2xl font-[Onest-Bold] mb-1 mt-10">Contact Information</h1>
-          <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
-          <table className="max-xsm:hidden">
-            <tbody>
-              <tr>
-                <td className="pr-10 pb-3"><Mail className="inline-block align-[-3px] mr-2 w-5 h-5" />E-mail:</td>
-                <td className="pb-3"><a className="underline" href="mailto:n.giacomini99@gmail.com">n.giacomini99@gmail.com</a></td>
-              </tr>
-              <tr>
-                <td className="pr-10 pb-3"><FaGithub className="inline-block align-middle mr-2" />GitHub:</td>
-                <td className="pb-3"><a className="underline" href="https://github.com/nicologiacomini" target="_blank" rel="noopener noreferrer">nicologiacomini</a></td>
-              </tr>
-              {/* <tr>
-                <td className="pr-10 pb-3"><FaTwitter className="inline-block align-middle mr-2" />X.com:</td>
-                <td className="pb-3"><a className="underline" href="https://x.com/ilnick99" target="_blank" rel="noopener noreferrer">@ilnick99</a></td>
-              </tr> */}
-              <tr>
-                <td className="pr-10 pb-3"><FaLinkedin className="inline-block align-middle mr-2" />LinkedIn:</td>
-                <td className="pb-3"><a className="underline" href="https://www.linkedin.com/in/nicolo-giacomini" target="_blank" rel="noopener noreferrer">Nicolò Giacomini</a></td>
-              </tr>
-              <tr>
-                <td className="pr-10 pb-3"><FaGlobe className="inline-block align-middle mr-2" />Website:</td>
-                <td className="pb-3"><a className="underline" href="https://nicologiacomini.me" target="_blank" rel="noopener noreferrer">nicologiacomini.me</a></td>
-              </tr>
-            </tbody>
-          </table>
-          <section className="xsm:hidden">
-            <div><Mail className="inline-block align-[-3px] mr-2 w-5 h-5" />E-mail:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="mailto:n.giacomini99@gmail.com">n.giacomini99@gmail.com</a></div>
-            <div><FaGithub className="inline-block align-middle mr-2" />GitHub:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://github.com/nicologiacomini" target="_blank" rel="noopener noreferrer">nicologiacomini</a></div>
-            {/* <div><FaTwitter className="inline-block align-middle mr-2" />X.com:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://x.com/ilnick99" target="_blank" rel="noopener noreferrer">@ilnick99</a></div> */}
-            <div><FaLinkedin className="inline-block align-middle mr-2" />LinkedIn:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://www.linkedin.com/in/nicolo-giacomini" target="_blank" rel="noopener noreferrer">Nicolò Giacomini</a></div>
-            <div><FaGlobe className="inline-block align-middle mr-2" />Website:</div>
-            <div className="mb-5 pl-7"><a className="underline" href="https://nicologiacomini.me" target="_blank" rel="noopener noreferrer">nicologiacomini.me</a></div>
-          </section>
-        </section>
-
-
+        <ContactInfo />
       </div>
   );
 }
