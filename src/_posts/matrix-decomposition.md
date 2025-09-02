@@ -29,8 +29,8 @@ Here we can see a graphical representation. Let's consconsider we want to verify
 <img src="/posts/matrix-decomp/original-vector.png" width="500"/>
 
 Now, let's calculate the matrix multiplication of $v$ with both an orthogonal and a diagonal matrix. I consider $Q=\begin{bmatrix}
-   0.707 & 0.707 \\
-   -0.707 & 0.707
+   0.707 & -0.707 \\
+   0.707 & 0.707
 \end{bmatrix}$ as orthogonal matrix and the matrix $D=\begin{bmatrix}
    0.5 & 0 \\
    0 & 2
