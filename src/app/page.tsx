@@ -31,8 +31,8 @@ export default async function Home() {
       <div className="py-5 px-5 md:px-0 text-lg font-[Onest-Regular]">
       <Header/>
       <p className="text-base text-justify">
-                I am Nicolò, I am working at BSC as Junior Research Engineer and, concurrently, I am pursuing the Master's Degree at UPC, in Barcelona.
-                I want to use this space as a place where to share with you the most interesting and useful things that I am studying.<br/>
+                I am Nicolò, I am working at Barcelona Supercomputing Center (BSC) as Junior Research Engineer.
+                I want to use this space as a place to share with you the most interesting and useful things that I am working on and learning.
                 I am a machine learning and networks systems enthusiast, and Python lover. I also enjoy web and software development. I am Italian, and I&apos;m living in Barcelona.
             </p>
         <p className="mt-10">
@@ -42,18 +42,21 @@ export default async function Home() {
           <h1 className="text-2xl font-[Onest-Bold] mb-1 mt-10">Work experience</h1>
           <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
 
-          <ExperienceCard company="Barcelona Supercomputer Center (BSC)" position="Junior Researcher Engineer" dates="2024 - in progress" description={["Provenance, Metadata and Reproducibility team.", "Working on enhancing reproducibility and traceability in HPC environments by developing metadata capture, storage, and workflow integration within the COMPSs framework."]} linkCompany="https://bsc.es/" img="/experience/bsc.jpg"/>
+          <ExperienceCard company="Barcelona Supercomputer Center (BSC)" position="Junior Researcher Engineer" dates="2024 - in progress" description={["**Group:** Workflow and Distributed Computing", "**Team:** Provenance, Metadata and Reproducibility", "**Description:** Working on enhancing reproducibility and traceability in HPC environments by developing metadata capture, storage, and workflow integration within the COMPSs framework"]} linkCompany="https://bsc.es/" img="/experience/bsc.jpg"/>
         </section>
 
         <section className="mb-10">
             <h1 className="text-2xl font-[Onest-Bold] mb-1">Education</h1>
             <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
 
-            <ExperienceCard company="Universitat Politècnica de Catalunya (UPC)" position="Master in Innovation and Research in Informatics" dates="2023 - in progress" description={["Specialization in Computer Network and Distributed Systems"]} linkCompany="https://www.fib.upc.edu/ca" img="/experience/upc.jpg"/>
+            <ExperienceCard company="Universitat Politècnica de Catalunya (UPC)" position="Master in Innovation and Research in Informatics" dates="September 2023 - January 2026" 
+            description={["**Specialization:** Computer Network and Distributed Systems", "**Thesis:** [Metadata Capture, Knowledge Extraction, and Predictive Analysis in HPC environment](https://github.com/nicologiacomini/Master-Thesis)","**Description:** Optimize workflow execution in HPC environments by developing a profiling tool implemented in COMPSs framework, contributing to Provenance Storage architecture improvement, and studying different ML models for predicting execution time"]}
 
-            <ExperienceCard company="Norwegian University of Science and Technology (NTNU)" position="Exchange Student (Erasmus+)" dates="Spring 2025" description={["Coursework: Advanced Software Engineering, Real-Time Programming, Applied Cryptography and Network Security"]} linkCompany="https://www.ntnu.edu/" img="/experience/ntnu.svg"/>
+            linkCompany="https://www.fib.upc.edu/ca" img="/experience/upc.jpg"/>
 
-            <ExperienceCard company="University of Brescia (UNIBS)" position="Bachelor's Degree in Computer Science Engineering" dates="Graduated in 2023" description={["Thesis: Algorithms and Consensus Protocols in Distributed Systems","Description: This thesis is the study concerning the principles of distributed consensus and the operation of the most used algorithms such as Practical Byzantine Fault Tolerance, Paxos and Raft"]} linkCompany="https://www.unibs.it/it" img="/experience/unibs.jpg"/> 
+            <ExperienceCard company="Norwegian University of Science and Technology (NTNU)" position="Exchange Student (Erasmus+)" dates="January 2025 - June 2025" description={["**Coursework:** Advanced Software Engineering, Real-Time Programming, Applied Cryptography and Network Security"]} linkCompany="https://www.ntnu.edu/" img="/experience/ntnu.svg"/>
+
+            <ExperienceCard company="University of Brescia (UNIBS)" position="Bachelor's Degree in Computer Science Engineering" dates="September 2018 - March 2023" description={["**Thesis:** Algorithms and Consensus Protocols in Distributed Systems","**Description:** This thesis is the study concerning the principles of distributed consensus and the operation of the most used algorithms such as Practical Byzantine Fault Tolerance, Paxos and Raft"]} linkCompany="https://www.unibs.it/it" img="/experience/unibs.jpg"/> 
 
         </section>
 

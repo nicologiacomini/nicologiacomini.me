@@ -1,29 +1,38 @@
 ---
 title: "Is AI hiding the knowledge?" 
-date: June 2, 2024
+date: February 15, 2026
 summary: "AI is very used today, but is AI keeping knowladge hidden? Which are the risks for the future?"
 visible: true
 ---
+**Publication date: June 2, 2024**
+
+[Edit: February 15, 2026](#update)
+
 ## Is this a real problem?
 
 Everybody is using AI systems to know more and solve problems. Chat-GPT has beaten the barrier between the skepticism against this technology and now millions of people have been using it every day. As a developer, sometimes I use it to solve some problems in a very short time because it has been improved and now it is very simple to use. Another example is GitHub Copilot. It is a really incredible tool for coding. Once you try it you wouldn't ever come back and developers definitely will use as much more in the next years. 
 Everything looks simple and efficient, but there is a hidden problem that comes up in my mind. Is it possible that using all these AI tools will contribute to hide the knowledge?
 
 In my experience as a developer, I notice that it is easier to solve a problem with an AI tool rather than search online. 
-In the tech field, everybody knows forums like Stack Overflow or GitHub Community - specifically for developers - or other platforms like Reddit or Quora - to be more generic - and they are crowded with people who like helping other people, and this is amazing. But with the advent of AI tools, is it possible that people use less forum or divulgation website (like Wikipedia or Medium)?
+In the tech field, everybody knows forums like Stack Overflow or GitHub Community (specifically for developers) or other platforms like Reddit or Quora and they are crowded with people who like helping other people, and this is amazing. But with the advent of AI tools, is it possible that people use less forum or divulgation website (like Wikipedia or Medium)?
 
 I know that it would be necessary to go in depth about the issue, but unfortunately I have very little data available. I want to show you anyway how the web traffic is moving in the last 12 years on the main platform of community divulgation. 
 
 **GitHub:**
 ![GitHub](/posts/ai-problem/github.png)
+
 **Medium:**
 ![Medium](/posts/ai-problem/medium.png)
+
 **Reddit:**
 ![Reddit](/posts/ai-problem/reddit.png)
+
 **StackOverflow:**
 ![Stackoverflow](/posts/ai-problem/stackoverflow.png)
+
 **Wikipedia:**
 ![Wikipedia](/posts/ai-problem/wikipedia.png)
+
 **OpenAI:**
 ![OpenAI](/posts/ai-problem/openai.png)
 
@@ -57,3 +66,12 @@ In the past, every activity required significant time and effort. Now, in our fr
 I fear that this will be almost impossible in the coming years. The technology that has been developing is making everything so prefabricated and standardized. While this makes things easier and quicker for everyone, this leaves no room for creativity.
 
 I believe there is no definitive solution to this situation. However, one good approach is to take our time, and resist the urge to rush everything. In this frenetic world, it's essential to remember that the process of learning is as important as the results we achieve.
+
+<a id="update"> </a>
+
+## Update of February 15, 2026: confirming the trend
+After 1 year and half, I want to check if the trend that I described in this article is confirmed. The data source is the official [https://data.stackexchange.com](https://data.stackexchange.com) website, where it is possible to check the number of questions asked on StackOverflow. As expected, the number of questions made on StackOverflow is decreasing dramatically year by year, and the decrease is more significant in the last 3 years. This confirms that people are using less online forums to solve their problems, and they are probably using AI tools instead.
+
+![Stackoverflow update February 2026](/posts/ai-problem/stackoverflow-update.png)
+
+It is sad to see that the community knowledge is decreasing, but it is also true that AI tools are making everything easier and faster. In the future the online forums are destined to disappear, and AI will be the preferred way to solve problems, at least coding side. 

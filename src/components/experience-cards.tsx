@@ -27,9 +27,70 @@ export function ExperienceCard({ company, position, dates, description, linkComp
                 <div className="mr-auto rounded-full bg-background-date px-2 py-0.5 text-date-color">{dates}</div>
             </div>
 
-            {description.map((element, key) => (
-                <p key={key} className="overflow-hidden pr-7 text-base text-text-subtitle mb-0">{element}</p>
-            ))}
+            {description.map((element, key) => {
+                const parts: React.ReactNode[] = [];
+                const boldRegex = /\*\*(.*?)\*\*/g;
+                const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g; // capture label inside [] and URL inside ()
+                let lastIndex = 0;
+                let match: RegExpExecArray | null;
+                let boldIdx = 0;
+
+                const processLinks = (text: string) => {
+                    const nodes: React.ReactNode[] = [];
+                    let llast = 0;
+                    let li = 0;
+                    let lm: RegExpExecArray | null;
+                    while ((lm = linkRegex.exec(text)) !== null) {
+                        if (lm.index > llast) {
+                            nodes.push(text.slice(llast, lm.index));
+                        }
+                        const label = lm[1];
+                        const url = lm[2];
+                        nodes.push(
+                            <a
+                                key={`link-${key}-${li++}`}
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-text-button underline"
+                            >
+                                {label}
+                            </a>
+                        );
+                        llast = linkRegex.lastIndex;
+                    }
+                    if (llast < text.length) {
+                        nodes.push(text.slice(llast));
+                    }
+                    linkRegex.lastIndex = 0;
+                    return nodes;
+                };
+
+                while ((match = boldRegex.exec(element)) !== null) {
+                    if (match.index > lastIndex) {
+                        const plainSegment = element.slice(lastIndex, match.index);
+                        parts.push(...processLinks(plainSegment));
+                    }
+                    parts.push(
+                        <strong key={`b-${key}-${boldIdx++}`} className="font-bold">
+                            {match[1]}
+                        </strong>
+                    );
+                    lastIndex = boldRegex.lastIndex;
+                }
+
+                if (lastIndex < element.length) {
+                    parts.push(...processLinks(element.slice(lastIndex)));
+                }
+
+                boldRegex.lastIndex = 0;
+
+                return (
+                    <p key={key} className="overflow-hidden pr-7 text-sm text-text-subtitle mb-0 mt-2">
+                        {parts}
+                    </p>
+                );
+            })}
         </div>
     </div>
   )
