@@ -1,5 +1,5 @@
 ---
-title: Denoising data, which technique?
+title: Denoising Data, Which Technique?
 date: February 17, 2024
 summary: "Denoising of data usins two different approach: low-rank approximation and Gavish et al. method. Which will be the best?"
 words: 2000

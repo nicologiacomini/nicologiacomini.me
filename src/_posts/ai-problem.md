@@ -1,5 +1,5 @@
 ---
-title: "Is AI hiding the knowledge?" 
+title: "Is AI Hiding the Knowledge?"
 date: February 15, 2026
 summary: "AI is very used today, but is AI keeping knowladge hidden? Which are the risks for the future?"
 visible: true

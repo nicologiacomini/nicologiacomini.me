@@ -1,5 +1,5 @@
 ---
-title: Matrix decomposition, the basis for ML
+title: Matrix Decomposition, the Basis for ML
 date: February 10, 2024
 summary: "A short introduction on basic concepts used in ML, introduction to Algebra, Spectral Decomposition and SVD"
 words: 2095

@@ -1,5 +1,5 @@
 ---
-title: Multi linear regression for calibration 
+title: Multi Linear Regression for Calibration 
 date: March 10, 2024
 summary: "How to apply the multi linear regression to obtain the reference data. Let's find out together!"
 words: 1200

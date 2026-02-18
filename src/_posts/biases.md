@@ -1,5 +1,5 @@
 ---
-title: "Biases that everyone should know" 
+title: "Biases That Everyone Should Know"
 date: August 19, 2024
 summary: "Simple explanation of the main biases that we can find in reasoning in research, articles, discussions and speeches."
 words: 1694

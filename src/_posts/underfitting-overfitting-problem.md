@@ -1,5 +1,5 @@
 ---
-title: "Underfitting and overfitting: an overview" 
+title: "Underfitting and Overfitting: An Overview" 
 date: August 1, 2024
 summary: "Not always having more parameters means high reliability of the model. Let's see why."
 words: 1386

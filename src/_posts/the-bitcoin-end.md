@@ -1,5 +1,5 @@
 ---
-title: The Bitcoin end
+title: The Bitcoin End
 date: January 1, 2025
 summary: "Let's explore all the causes that will bring the end of Bitcoin. Will it eventually die?"
 visible: true

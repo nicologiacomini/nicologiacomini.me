@@ -1,5 +1,5 @@
 ---
-title: "FFNN for data calibration" 
+title: "FFNN for Data Calibration" 
 date: August 8, 2024
 summary: "How to implement a FFNN for data calibration. Which will be the best implementation?"
 words: 0

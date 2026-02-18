@@ -1,5 +1,5 @@
 ---
-title: "Feedforward Neural Network: what it is" 
+title: "Feedforward Neural Network Explained" 
 date: September 2, 2024
 summary: "Let's explore the main characteristics of a Feedforward Neural Network and how it works."
 words: 2350

@@ -1,5 +1,5 @@
 ---
-title: "How we can trust to the AI" 
+title: "How We Can Trust to the AI" 
 date: June DATE, 2025
 summary: "How important is data? How is trustablity of data correlated to the deontology?"
 visible: true
