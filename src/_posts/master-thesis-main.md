@@ -11,13 +11,13 @@ This post, the first in a short series, presents the problem context and the hig
 ## Real scenario
 Imagine a researcher that after a lot of studies, they want to run an execution of a simulation in order to see if their assumptions are correct and check the results. They have available an HPC environment, so they can use a huge amount of computational resources for the test. Therefore, the Slurm Workload Manager asks the user to reserve a specific amount of resources and for how long holding the resources, the so-called wall clock time. The wall clock is basically an estimation of the application duration used for reserving the resources. Usually the researcher does not know the exact execution time, so they try to guess inserting a random number, usually very high. Then, the researcher waits for the job completion and, in the worst case, the job reaches the wall clock time and fails. 
 
-![Launch job in Slurm](/posts/master-thesis-main/slurm-launch.png)
+![Launch job in Slurm](/posts/master-thesis-main/slurm-launch.jpg)
 
 ## 
 
 At this point, the researcher investigates to understand how this could happen. They start to look for the log files and the resource usage of the application to understand if the application used the resources in the right way, but there is nothing to see... Then the researcher explores if any other researcher did similar experiments, to understand if they implemented the application in a different way, but in most of the cases, they cannot find anything. So the researcher has to try again, and test it again, using a random amount of resources, and trying to guess a sufficient amount of time for completing the execution. This methodology made people in research to lose a lot of time.
 
-![Looking for metadata](/posts/master-thesis-main/investigation.png)
+![Looking for metadata](/posts/master-thesis-main/investigation.jpg)
 
 ## Current limitations
 This real example shows clearly that in research there are some limitations:
