@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 interface ExperienceCardProps {
     company: string,
@@ -13,6 +13,26 @@ interface ExperienceCardProps {
 
 export function ExperienceCard({ company, position, dates, description, linkCompany, img }: ExperienceCardProps) {
     const [open, setOpen] = useState(false);
+    const contentRef = useRef<HTMLDivElement | null>(null);
+    const [maxHeight, setMaxHeight] = useState<string>('0px');
+    
+    useEffect(() => {
+        const el = contentRef.current;
+        if (!el) return;
+
+        if (open) {
+            // set to the scrollHeight to animate open
+            setMaxHeight(`${el.scrollHeight}px`);
+            // after the transition completes we set max-height to 'none' in onTransitionEnd
+        } else {
+            // closing: set to current height first so the transition can start, then collapse to 0
+            const current = el.scrollHeight;
+            setMaxHeight(`${current}px`);
+            // trigger collapse on next tick to allow transition from explicit px to 0
+            const t = setTimeout(() => setMaxHeight('0px'), 10);
+            return () => clearTimeout(t);
+        }
+    }, [open]);
 
     return (
         <div className="group my-2 grid max-w-screen-md grid-cols-12 space-x-8 overflow-hidden rounded-lg border border-border-experience pt-4 pb-2 text-gray-700 sm:mx-auto bg-background-experience">
@@ -53,8 +73,25 @@ export function ExperienceCard({ company, position, dates, description, linkComp
                 <div className="mr-auto rounded-full bg-background-date px-2 py-0.5 text-date-color">{dates}</div>
             </div>
 
-            {open && description.map((element, key) => {
-                const parts: React.ReactNode[] = [];
+            <div
+                ref={contentRef}
+                style={{
+                    maxHeight: maxHeight,
+                    transition: 'max-height 300ms ease, opacity 200ms ease',
+                    overflow: 'hidden',
+                    opacity: open ? 1 : 0,
+                }}
+                aria-hidden={!open}
+                className="mt-2"
+                onTransitionEnd={(e) => {
+                    // If we've just finished expanding, allow natural height for future content changes
+                    if ((e as React.TransitionEvent<HTMLDivElement>).propertyName === 'max-height' && open) {
+                        setMaxHeight('none');
+                    }
+                }}
+            >
+                {description.map((element, key) => {
+                    const parts: React.ReactNode[] = [];
                 const boldRegex = /\*\*(.*?)\*\*/g;
                 const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g; // capture label inside [] and URL inside ()
                 let lastIndex = 0;
@@ -111,12 +148,13 @@ export function ExperienceCard({ company, position, dates, description, linkComp
 
                 boldRegex.lastIndex = 0;
 
-                return (
-                    <p key={key} className="overflow-hidden pr-7 text-sm text-text-subtitle mb-0 mt-2">
-                        {parts}
-                    </p>
-                );
-            })}
+                    return (
+                        <p key={key} className="overflow-hidden pr-7 text-sm text-text-subtitle mb-0 mt-2">
+                            {parts}
+                        </p>
+                    );
+                })}
+            </div>
         </div>
     </div>
   )
