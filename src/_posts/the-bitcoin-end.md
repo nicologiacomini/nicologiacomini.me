@@ -19,6 +19,9 @@ This means that finding a hash or several hashs is billions of billions of times
 
 This is a technological revolution. If quantum computers could be easily accessible, the end of the Bitcoin protocol and all the blockchains that implement Proof-of-Work as a consensus algorithm should be compromised forever. Actually, to be fair, all the encryption methods and every algorithm that exploits the fact that finding a sequence of bits is difficult and power-consuming, are at risk. However, the research into quantum-resistant cryptography is ongoing and the quantum computing adoption for malicious purposes might still be decades away.
 
+### Update of April 2026: quantum computers are not a threat
+Recently, this paper [<span class='reference'>[7]</span>](#bibliography) has been published. They justify Bitcoin's security against quantum mining by revealing that the "Grover threat" is a theoretical phantom that dissolves when faced with real-world engineering constraints. While quantum computers have a mathematical shortcut called Grover’s algorithm, using it would require a huge amount of energy. To actually mine Bitcoin this way, you would need a computer with trillions of parts and a power supply **roughly equal to the entire energy output of the sun**. Because the cost of building and powering such a machine is trillions of times higher than the value of the Bitcoin itself, the threat remains a mathematical curiosity rather than a real-world danger. Good news for Bitcoin: it isn't just protected by code, it’s protected by the impossible laws of physics and economics.
+
 ## Second threat: mining costs
 
 ### Energy Costs  
@@ -98,3 +101,5 @@ Bitcoin’s story is far from over. Despite all the technological criticism, it 
 <span class='reference'>[5]</span> [Bitcoin Wiki - Difficulty](https://en.bitcoin.it/wiki/Difficulty)
 
 <span class='reference'>[6]</span> [El Salvador mines 474 Bitcoin using geothermal volcanic energy](https://cointelegraph.com/news/el-salvador-mines-bitcoin-volcanic-energy)
+
+<span class='reference'>[7]</span> [Kardashev scale Quantum Computing for Bitcoin Mining](https://arxiv.org/abs/2603.25519)
