@@ -64,6 +64,8 @@ export default {
 			'background-experience': 'var(--background-experience)',
 			'border-experience': 'var(--border-experience)',
 			'date-color': 'var(--date-color)',
+			'download-cv-button': 'var(--download-cv-button)',
+			'download-cv-button-hover': 'var(--dowload-cv-button-hover)'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
