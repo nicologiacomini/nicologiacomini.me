@@ -1,9 +1,11 @@
 ---
-title: "Master's Thesis: Metadata Capture, Knowledge Extraction, and Predictive Analysis for HPC Workflows" 
+title: "Master's Thesis: a summary of the project and the goals" 
 date: February 20, 2026
 summary: "Let's explore what happens when a researcher submits a job to an HPC environment. How can we improve research methodology and collaboration?"
 visible: true
 ---
+
+# Metadata Capture, Knowledge Extraction, and Predictive Analysis for HPC Workflows
 
 During the last months, I have been working on this important project, which allowed me to complete the Master's Degree. 
 This post, the first in a short series, presents the problem context and the high-level goals. The idea of these posts is to document the research workflow, share practical tools and formats, and provide guidance for applying the approach to similar HPC use cases. Let's start with the problem context and the goals of this project.
