@@ -34,7 +34,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-            <main className="flex flex-col max-w-screen-sm mx-auto min-h-[70vh] mb-10 text-[Onest-Regular]">
+            <main className="flex flex-col max-w-screen-md mx-auto min-h-[70vh] mb-10 text-[Onest-Regular]">
               {children}
             </main>
             <Footer />
