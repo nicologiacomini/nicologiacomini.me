@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Onest-Regular';
   src: url('/fonts/Onest-Regular.ttf');
@@ -72,6 +76,8 @@
   --background-experience: #ffffffb4;
   --border-experience: #f1f5f9;
   --date-color: #1e88e5;
+  --download-cv-button: #717171;
+  --dowload-cv-button-hover: #373737;
 
   @supports (list-style-type: disclosure-closed) {
     ul > li::marker {
@@ -123,6 +129,8 @@
   --background-experience: #262626b1;
   --border-experience: #262626b1;
   --date-color: #7cc534;
+  --download-cv-button: #ffffff;
+  --dowload-cv-button-hover: #9ca3af;
 
   @supports (list-style-type: disclosure-closed) {
     ul > li::marker {
@@ -262,27 +270,16 @@ body {
 }
 
 @media (min-width: 768px) {
-
   .navbutton {
-    transition: width .5s;
-  }
-  
-  .navbutton:hover {
-    width: 8rem;
+    width: auto !important;
+    /* padding-left: 1rem !important; */
+    padding-right: 10px !important;
   }
 
   .navlabel {
-    width: 0;
-    overflow: hidden;
-    transition: width 0.5s ease-in-out;
-    white-space: nowrap;
     margin-left: 0.5rem;
-    color: var(--a-hover-color);
+    white-space: nowrap;
     font-family: 'Onest-Bold';
-  }
-
-  .navbutton:hover .navlabel {
-    width: 3.5rem; /* or whatever width fits your text */
   }
 }
 
