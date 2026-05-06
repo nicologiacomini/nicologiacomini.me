@@ -59,7 +59,7 @@ export default async function Home() {
                 </Button>
               </a>
 
-              <a href="/Nicolo_Giacomini_CV.pdf" download>
+              <a href="https://drive.google.com/file/d/1_juLGtpvpLGqs5r6wWnT4XLwrdCJTKaC/view?usp=sharing">
                 <Button className="flex align-items justify-center px-8 py-2 text-sm text-background-button font-[Onest-Bold] rounded-md bg-download-cv-button hover:bg-download-cv-button-hover">
                   Download CV
                 </Button>
