@@ -4,7 +4,6 @@ import { ExperienceCard } from "@/components/experience-cards";
 import ContactInfo from "@/components/contact-info";
 import TechnicalSkills from "@/components/techincal-skills";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 
 export async function generateStaticParams(): Promise<{ postId: string }[]> {
@@ -34,18 +33,14 @@ export default async function Home() {
         <Header/>
 
         <section className="mb-10">
-          {/* <h1 className="text-2xl font-[Onest-Bold] mb-1">About me</h1> */}
-          {/* <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" /> */}
-            {/* I am Nicolò, I am working at Barcelona Supercomputing Center (BSC) as Junior Research Engineer.
-            I want to use this space as a place to share with you the most interesting and useful things that I am working on and learning.
-            I am a machine learning and networks systems enthusiast, and Python lover. I also enjoy web and software development. I am Italian, and I&apos;m living in Barcelona. */}
-
             <p className="text-base text-justify mb-4">
-              Ciao, I&apos;m Nicolò! I&apos;m an Italian Computer Engineer based in Barcelona, currently working as a Research Engineer at the Barcelona Supercomputing Center (BSC).
+              Ciao, I&apos;m Nicolò! I&apos;m an Italian Computer Engineer based in Barcelona, currently working as an ML Engineer at Smadex, where I focus on MLOps and the reliability, observability, and performance of machine learning systems.
             </p>
+
             <p className="text-base text-justify">
-              Following my Master&apos;s at UPC, my work focuses on distributed systems and HPC. Specifically, I work on building non-intrusive profilers for the <a href="https://compss-doc.readthedocs.io/en/stable/" className="font-semibold underline">COMPSs framework</a>, contributing to <a href="https://github.com/crs4/provenance-storage" className="font-semibold underline">Provenance Storage</a> architecture improvement using Docker and REST APIs, and packaging metadata with standards like <a href="https://www.researchobject.org/ro-crate/" className="font-semibold underline">RO-Crate</a>. I also explore machine learning approaches to predict workflow execution times and improve resource allocation.
+              Following my Master&apos;s at UPC, I worked as a Research Engineer at the Barcelona Supercomputing Center (BSC), where I focused on distributed systems, HPC, and reproducibility. My work involved enhancing the <a href="https://compss-doc.readthedocs.io/en/stable/" className="font-semibold underline">COMPSs framework</a> with metadata capture and provenance capabilities, contributing to <a href="https://github.com/crs4/provenance-storage" className="font-semibold underline">Provenance Storage</a>, and working with technologies such as Docker, REST APIs, and <a href="https://www.researchobject.org/ro-crate/" className="font-semibold underline">RO-Crate</a>.
             </p>
+
             <p className="text-base text-justify">
               I&apos;m a machine learning and networks systems enthusiast, and Python lover. I also enjoy web and software development. I&apos;m using this space to share the most interesting things I&apos;m working on and learning along the way.
             </p>
@@ -72,7 +67,9 @@ export default async function Home() {
           <h1 className="text-2xl font-[Onest-Bold] mb-1 mt-10">Work experience</h1>
           <hr className="h-px bg-gray-200 border-0 dark:bg-gray-500 mb-5 mt-2" />
 
-          <ExperienceCard company="Barcelona Supercomputer Center (BSC)" position="Junior Researcher Engineer" dates="2024 - in progress" description={["**Group:** Workflow and Distributed Computing", "**Team:** Provenance, Metadata and Reproducibility", "**Description:** Working on enhancing reproducibility and traceability in HPC environments by developing metadata capture, storage, and workflow integration within the COMPSs framework"]} linkCompany="https://bsc.es/" img="/experience/bsc.jpg"/>
+          <ExperienceCard company="Smadex" position="ML Engineer" dates="June 2026 - in progress" description={["**Group:** ML department", "**Team:** MLOps", "**Description:** Monitoring and ensuring the performance, reliability, and observability of ML models and their infrastructure. Designing and implementing ML-specific metrics, alerts, and monitoring systems to proactively detect performance degradation and infrastructure issues."]} linkCompany="https://smadex.com/" img="/experience/smadex.jpeg"/>
+
+          <ExperienceCard company="Barcelona Supercomputer Center (BSC)" position="Junior Researcher Engineer" dates="June 2024 - June 2026" description={["**Group:** Workflow and Distributed Computing", "**Team:** Provenance, Metadata and Reproducibility", "**Description:** Working on enhancing reproducibility and traceability in HPC environments by developing metadata capture, storage, and workflow integration within the COMPSs framework"]} linkCompany="https://bsc.es/" img="/experience/bsc.jpg"/>
         </section>
 
         <section className="mb-10">
